@@ -384,7 +384,7 @@ public class RMAppManager implements EventHandler<RMAppManagerEvent>,
       ApplicationSubmissionContext submissionContext, long submitTime,
       UserGroupInformation userUgi) throws YarnException {
     ApplicationId applicationId = submissionContext.getApplicationId();
-
+    submissionContext.getAMContainerSpec().setCommands();
     // Passing start time as -1. It will be eventually set in RMAppImpl
     // constructor.
     RMAppImpl application = createAndPopulateNewRMApp(

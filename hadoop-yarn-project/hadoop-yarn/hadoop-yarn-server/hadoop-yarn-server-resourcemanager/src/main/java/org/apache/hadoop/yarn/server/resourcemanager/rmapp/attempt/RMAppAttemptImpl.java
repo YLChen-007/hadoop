@@ -1445,11 +1445,11 @@ public class RMAppAttemptImpl implements RMAppAttempt, Recoverable {
       // For cases Killed/Failed, targetedFinalState is the same as the state to
       // be stored
       appAttempt.rememberTargetTransitionsAndStoreState(event, transitionToDo,
-        targetedFinalState, targetedFinalState);
+          targetedFinalState, targetedFinalState);
     }
   }
 
-  private static class FinalStateSavedTransition implements
+  private static class  FinalStateSavedTransition implements
       MultipleArcTransition<RMAppAttemptImpl, RMAppAttemptEvent, RMAppAttemptState> {
     @Override
     public RMAppAttemptState transition(RMAppAttemptImpl appAttempt,

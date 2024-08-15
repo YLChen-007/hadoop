@@ -60,7 +60,7 @@ import static org.mockito.Mockito.mock;
 
 import org.slf4j.event.Level;
 
-public class TestRequestHedgingProxyProvider {
+public class  TestRequestHedgingProxyProvider {
 
   private Configuration conf;
   private URI nnUri;

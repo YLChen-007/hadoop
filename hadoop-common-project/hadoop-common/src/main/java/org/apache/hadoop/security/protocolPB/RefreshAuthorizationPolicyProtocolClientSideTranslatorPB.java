@@ -30,7 +30,7 @@ import org.apache.hadoop.thirdparty.protobuf.RpcController;
 
 import static org.apache.hadoop.ipc.internal.ShadedProtobufHelper.ipc;
 
-public class RefreshAuthorizationPolicyProtocolClientSideTranslatorPB implements
+  public class RefreshAuthorizationPolicyProtocolClientSideTranslatorPB implements
     ProtocolMetaInterface, RefreshAuthorizationPolicyProtocol, Closeable {
 
   /** RpcController is not used and hence is set to null */
